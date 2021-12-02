@@ -191,6 +191,48 @@ header{
     height: 600px;
     background-color: rgb(146, 88, 221);
 }
+
+.title-container{
+width: 80%;
+margin: auto;
+height: 20%;
+}
+
+.sponsor-row{
+    background-color: rgb(102, 16, 214);
+    height: 50%;
+}
+
+
+.row-element{
+    height: 100%;
+    float: left;
+}
+
+.square{
+    width: 30%;
+    background-color: white;
+}
+
+.rectangle{
+    width: 40%;
+}
+
+.free-trial{
+    background-color: rgb(199, 157, 255);
+    height: 30%;
+    width: 80%;
+    margin: auto;
+}
+
+.free-trial-block{
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    float: left;
+}
+
+
 /* faq */
 .faq{
     width: 100%;
