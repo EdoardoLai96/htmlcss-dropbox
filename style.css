@@ -251,4 +251,17 @@ footer{
     background-color: rgb(221, 88, 128);
 }
 
+.footer-column-container{
+height: 80%;
+}
+
+.footer-bottom{
+height: 20%;
+}
+
+.footer-column{
+    float: left;
+    width: 20%;
+}
+
 /*FINE FOOTER  */
