@@ -6,6 +6,11 @@
 
 /* Common */
 
+h1{
+    border: 2px solid black;
+    height: 30%;
+}
+
 .common-container{
     width: 80%;
     margin: auto;
@@ -13,6 +18,10 @@
     height: 100%;
 }
 
+.text-block{
+    border: 2px solid black;
+
+}
 /* fine common */
 
 /* HEADER  */
@@ -39,6 +48,33 @@ header{
     width: 100%;
     height: 500px;
     background-color: rgb(137, 221, 88);
+}
+
+.jumbo-container{
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    height: 100%;
+}
+
+.jumbo-container::after{
+    display: table; 
+    content: "";
+    clear: both;
+}
+
+
+.jumbo-text{
+    height: 70%;
+    width: 40%;
+    float: left;
+}
+
+.jumbo-img-container{
+    height: 70%;
+    width: 60%;
+    float: right;
+    border: 2px solid black;
 }
 
 /* scelta piano */
