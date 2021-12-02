@@ -6,10 +6,21 @@
 
 /* Common */
 
+.common-container{
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    height: 100%;
+}
+
 /* fine common */
 
 /* HEADER  */
-
+header{
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+}
 
 /* FINE HEADER  */
 
@@ -24,17 +35,46 @@
 /* INIZIO SEZIONI DI MAIN  */
 
 /* jumbotron */
+.jumbotron{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(137, 221, 88);
+}
 
 /* scelta piano */
+.piano{
+    width: 100%;
+    height: 1800px;
+    background-color: rgb(88, 221, 221);
+}
 
 /* operazioni */
+.operazioni{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(88, 123, 221);
+}
 
 /* sponsor */
-
+.sponsor{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(146, 88, 221);
+}
 /* faq */
+.faq{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(217, 88, 221);
+}
 
 /* FINE SEZIONI DI MAIN  */
 
 /* FOOTER  */
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(221, 88, 128);
+}
 
 /*FINE FOOTER  */
