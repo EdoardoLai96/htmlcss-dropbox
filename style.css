@@ -28,6 +28,12 @@ h1{
     border: 2px solid black;
 }
 
+.clear-fix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
 
 /* fine common */
 
@@ -100,11 +106,20 @@ header{
     height: 45%;
 }
 
+.column-container::after{
+
+}
+
 .piano-column{
     height: 100%;
-    display: inline-block;
-    width: 30%;
+    /* display: inline-block; */
+    width: calc(92%/3);
     background-color: dimgrey;
+    float: left;
+}
+
+.mid-column{
+    margin: 0 4%;
 }
 
 .piano-row{
@@ -119,11 +134,6 @@ header{
     background-color: rgb(255, 224, 224);
 }
 
-.piano-container::after{
-    display: table;
-    content: "";
-    clear: both;
-}
 
 
 .partner-text{
@@ -161,12 +171,12 @@ header{
     height: 100%;
     border: 2px solid coral;
     background-color: white;
-    width: 33%;
-    display: inline-block;
+    width: calc(96%/3);
+    float: left;
 }
 
 .mid-container{
-    /* margin: 0 %; */
+    margin: 0 2%;
 }
 
 .operazioni-text{
