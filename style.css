@@ -200,7 +200,6 @@ height: 20%;
 
 .sponsor-row{
     background-color: rgb(102, 16, 214);
-    height: 50%;
 }
 
 
@@ -210,12 +209,14 @@ height: 20%;
 }
 
 .square{
-    width: 30%;
+    width: 30vw;
+    height: 30vw;
     background-color: white;
 }
 
 .rectangle{
-    width: 40%;
+    width: calc(100% - 60vw);
+    height: 30vw;
 }
 
 .free-trial{
