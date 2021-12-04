@@ -8,6 +8,9 @@
 /* Common */
 
 
+
+/* MODIFIERS */
+
 .inline-block{
     display: inline-block;
 }
@@ -39,12 +42,26 @@
     margin-top: 20px;
 }
 
+.padding-vert-60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+} 
+
+
+.padding-vert-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+} 
+
+
 .padding-vert-20{
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 } 
 
 .padding-vert-10{
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .mrgbottom60px{
@@ -52,15 +69,18 @@
 }
 
 .padding-side-20{
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .padding-side-30{
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .padding-side-40{
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .display-block{
@@ -68,8 +88,20 @@
 }
 
 .border-visible{
-    border: solid 1px grey;
+    border: solid 1px rgb(0, 0, 0);
 }
+
+
+.border-visible-gray{
+    border: solid 1px rgb(156, 154, 154);
+}
+
+.border-visible-gray-bottom{
+    border-bottom: solid 1px rgb(156, 154, 154);
+}
+
+
+
 
 .text-center{
     text-align: center;
@@ -78,6 +110,15 @@
 .fontsize-20px{
     font-size: 20px;
 }
+
+.fontsize-30px{
+    font-size: 30px;
+}
+
+.line-height-27{
+    line-height: 27px;
+}
+
 
 .bold-600{
     font-weight: 600;
@@ -90,16 +131,21 @@ float: right;
 
 .float-left{
     float: left;
-    }
-    
+}
 
+.contain{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+    
+/* FINE MODIFIERS */
 
 ul{
 list-style: none;
 }
 
 h1{
-    border: 2px solid black;
     height: 30%;
 }
 
@@ -118,18 +164,15 @@ a{
 .common-container{
     width: 80%;
     margin: auto;
-    border: 2px solid black;
     height: 100%;
 }
 
 .text-container{
-    border: 2px solid black;
 
 }
 
 
 .img-container{
-    border: 2px solid black;
 }
 
 .clear-fix::after{
@@ -188,7 +231,6 @@ header a{
 
 
 .btn{
-color: white;
 /* display: inline-block; */
 padding: 8px 16px;
 font-size: 13px;
@@ -199,6 +241,8 @@ font-size: 13px;
 
 .btn-blue{
     background-color: #0160FF;
+    color: white;
+
 }
 
 .btn-blue.btn-col{
@@ -244,7 +288,6 @@ font-size: 13px;
 .jumbo-container{
     width: 90%;
     margin: auto;
-    border: 2px solid black;
     height: 100%;
 }
 
@@ -297,12 +340,12 @@ padding: 50px;
     object-fit: contain;
     height: 100%;
     width: 100%;
+    margin-bottom: -65px;
 }
 
 /* scelta piano */
 .piano{
     width: 100%;
-    /* height: 1800px; */
     margin-top: 50px;
 }
 
@@ -387,7 +430,6 @@ a.a-col{
 }
 
 .partner-container{
-    height: 400px;
     background-color: rgb(255, 224, 224);
 }
 
@@ -398,6 +440,12 @@ a.a-col{
     width: 50%;
     height: 100%;
 
+}
+
+#trova-partner{
+     font-size: 16px;
+     display: inline-block;
+     color: black;
 }
 
 .partner-img-container{
