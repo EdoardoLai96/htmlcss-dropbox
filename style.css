@@ -197,6 +197,12 @@ html{
     padding-left: 40px;
     padding-right: 40px;
 }
+
+.padding-side-50{
+    padding-left: 50px;
+    padding-right: 50px;
+} 
+
 .padding-side-60{
     padding-left: 60px;
     padding-right: 60px;
@@ -216,6 +222,10 @@ html{
 
 .padding-bottom-30{
     padding-bottom: 30px;
+}
+
+.padding-0{
+    padding: 0;
 }
 
 .display-block{
@@ -271,7 +281,7 @@ height: 15vw;
 }
 
 .pos-absolute{
-    position: relative;
+    position: absolute;
 }
 
 .transform{
@@ -324,6 +334,9 @@ height: 15vw;
     font-size: 14px;
 }
 
+.fontsize-13px{
+    font-size: 13px;
+}
 
 
 .fontsize-30px{
@@ -334,6 +347,10 @@ height: 15vw;
     font-size: 35px;
 }
 
+
+.line-height-0{
+    line-height: 0;
+}
 
 
 .line-height-27{
@@ -358,6 +375,13 @@ height: 15vw;
     font-weight: 600;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
+.scroll{
+    overflow: scroll;
+}
 
 .float-right{
 float: right;
@@ -404,14 +428,6 @@ a{
     height: 100%;
 }
 
-.text-container{
-
-}
-
-
-.img-container{
-}
-
 .clear-fix::after{
     display: table;
     content: "";
@@ -421,7 +437,7 @@ a{
 
 /* fine common */
 
-/* HEADER  */ù
+/* HEADER  */
 
 /* PROBLEMA DI ALLINEAMENTO, SE NON METTO VERTICAL ALIGN MIDDLE SIA A LI CHE A IMG L'IMMAGINE NON E' ALLINEATA  */
 /* AL CENTRO DEL CONTENITORE, SE INVECE LO METTO GLI LI ESCONO DAL BORDO */
@@ -432,6 +448,9 @@ header{
     height: 60px;
     line-height: 60px;
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999999999999;
 }
 
 .header-row{
@@ -441,6 +460,7 @@ header{
 
 header .left-nav{
     float: left;
+    padding-right: 150px;
 }
 
 header .right-nav{
@@ -450,40 +470,59 @@ header .right-nav{
 .sx-list{
     float: left;
 }
+/* 
+.hover-nav:hover a{
+    border-color: 2px solid #0160FF;
+    display: block;
+} */
 
-.hover-nav:hover{
-    background-color: #0160FF;
-    border: 1px solid #000;
+.hover-nav:hover .list-show{
+    display: block;
 }
 
+.list-show{
+    position: absolute;
+    padding-right:30px;
+    padding-left: 10px;
+    background-color: white;
+
+}
+
+.dx-list a, .sx-list a{
+padding-bottom: 15px;
+border-bottom: 2px solid #fff;
+}
+
+
 .hover-nav:hover a{
-    color: white;
+    border-bottom: 2px solid #0160FF;;
+}
+
+.drop-down-item:hover{
+    text-decoration: 2px underline #0160FF;
+    cursor: pointer;
 }
 
 
 .hover-accedi:hover{
-    color: #0160FF;
-    background-color: white;
-    border: 1px solid #000;
+    color: #000;
+    background-color: #B3D0E7;
 }
 
 
 header li{
-    margin: 0px 15px;
+    padding: 0px 15px;
     display: inline-block;
-    vertical-align: middle;
 }
 
 header a{
     text-decoration: none;
     color: #000;
-    /* display: inline-block; */
 }
 
 
 
 .btn{
-/* display: inline-block; */
 padding: 8px 16px;
 font-size: 13px;
 
@@ -497,32 +536,44 @@ font-size: 13px;
 
 }
 
+.btn-blue:hover{
+    text-decoration: underline
+}
+
+
 .btn-blue.btn-col{
     padding-left: 60px;
     padding-right: 60px;
     white-space: nowrap;
 }
 
+.btn-white:hover{
+    background-color: #0160FF;
+    color: white;
+}
 
 
 .logo{
     display: inline-block;
-    vertical-align: middle;
 
-}
-
-.sx-list{
-    float: left;
 }
 
 .immagine-header{
     float: left;
+    padding-top: 5px;
+}
+
+#accedi{
+    padding-bottom: 8px;
 }
 /* FINE HEADER  */
 
 
 /* MAIN  */
 
+main{
+    margin-top: 60px;
+}
 
 /* FINE MAIN */
 
@@ -579,7 +630,6 @@ padding: 50px;
 .arrow{
     font-size: 40px;
 }
-
 
 
 .jumbo-img-container{
@@ -642,8 +692,12 @@ vertical-align: middle;
     height: 45%;
 }
 
+a.a-col:hover{
+text-decoration: underline;
+}
+
+
 a.a-col{
-    text-decoration: underline;
     color: #0160FF;
 }
 
@@ -659,10 +713,9 @@ a.a-col{
 
 
 .piano-column{
-    height: 1200px;
-    /* display: inline-block; */
     width: calc(92%/3);
     float: left;
+    height: 1200px;
 }
 
 .col-title{
@@ -698,7 +751,6 @@ a.a-col{
 #trova-partner{
      font-size: 16px;
      display: inline-block;
-     color: black;
 }
 
 .partner-img-container{
@@ -745,7 +797,6 @@ a.a-col{
 /* sponsor */
 .sponsor{
 width: 100%;
-height: 600px;
 }
 
 .title-container{
@@ -779,6 +830,9 @@ background-color: #B3D0E7;
 
 }
 
+#bicycle{
+    filter: invert();
+}
 
 
 .free-trial-container{
@@ -826,6 +880,10 @@ height: 20%;
 .footer-column{
     float: left;
     width: 20%;
+}
+
+footer li a:hover{
+    text-decoration: underline;
 }
 
 /*FINE FOOTER  */
